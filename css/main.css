@@ -1,0 +1,33 @@
+#map {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div.search-container {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    right: 5px;
+    width: 350px;
+    top: 7px !important;
+}
+
+input.search-input {
+    position: relative;
+    z-index: 3;
+    width: 350px;
+    font-size: 1.2em;
+    border: 2px solid #34495e;
+    float: right;
+    line-height: 25px;
+    padding-left: 30px;
+    color: gray;
+    background-image: url("img/search-icon.png");
+    background-repeat: no-repeat;
+    background-position-x: 0.5em;
+    background-position-y: 50%;
+}

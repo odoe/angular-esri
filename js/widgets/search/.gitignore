@@ -1,0 +1,10 @@
+node_modules/*
+output/*
+*~
+*.swp
+.cache/*
+.grunt/*
+.idea/*
+build/*
+*.lnk
+*ugly.js
