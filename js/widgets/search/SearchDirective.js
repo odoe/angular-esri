@@ -15,6 +15,12 @@
             return t[0];
         }
 
+        function matchedItem(items, val) {
+           return head(array.filter(items, function(item) {
+               return item.label === val;
+           }));
+        }
+
         function SearchDirective($timeout, $log) {
             return {
                 restrict: 'A',
@@ -24,10 +30,7 @@
 
                     scope.$watch('selected', function(val) {
                         if (val) {
-                            var obj =  head(array.filter(scope.items, function(item) {
-                                return item.label === val;
-                            }));
-                            scope.zoom(obj);
+                            scope.zoom(matchedItem(scope.items, val));
                         }
                     });
 
