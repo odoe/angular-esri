@@ -19,12 +19,6 @@
             name: 'controllers',
             location: locationPath + 'js/controllers'
         }, {
-            name: 'directives',
-            location: locationPath + 'js/directives'
-        }, {
-            name: 'services',
-            location: locationPath + 'js/services'
-        }, {
             name: 'helpers',
             location: locationPath + 'js/helpers'
         }, {

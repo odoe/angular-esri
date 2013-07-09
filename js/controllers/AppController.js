@@ -23,12 +23,12 @@
             return new Map(elem, mapConfigs());
         }
 
-        function AppController($scope, $log) {
+        function AppController($scope) {
             $scope.map = mapGen('map');
         }
 
         function init(App) {
-            App.controller('AppCtrl', ['$scope', '$log', AppController]);
+            App.controller('AppCtrl', ['$scope', AppController]);
             return AppController;
         }
 

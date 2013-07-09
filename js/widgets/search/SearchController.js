@@ -45,7 +45,6 @@
                 $scope.map.graphics.clear();
                 $scope.map.graphics.add(setSymbol(item.feature));
                 $scope.map.setExtent(item.feature.geometry.getExtent(), true);
-                $log.info('map graphics?', $scope.map.graphics);
             };
         }
 
