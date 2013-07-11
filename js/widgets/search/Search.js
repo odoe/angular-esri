@@ -21,7 +21,7 @@
 
         function stateQuery(name, sr) {
             return queryGen({
-                where: ["STATE_NAME LIKE '%", name, "%'"].join(''),
+                where: ["STATE_NAME LIKE '", name, "%'"].join(''),
                 outFields: ['*'],
                 returnGeometry: true,
                 outSpatialReference: sr
