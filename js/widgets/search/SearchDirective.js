@@ -43,10 +43,10 @@
                     });
 
                     element.bind('keyup', function (e) {
-                        var term = titleCase(e.target.value);
+                        var term = e.target.value;
                         if (term.length > 2) {
                             $log.info('search for something', term);
-                            scope.find(term);
+                            scope.find(titleCase(term));
                         } else {
                             $log.info('reset list of items');
                             scope.items = [

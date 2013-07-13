@@ -43,8 +43,11 @@
             $scope.zoom = function(item) {
                 $log.info('add to map and zoom', item);
                 $scope.map.graphics.clear();
-                $scope.map.graphics.add(setSymbol(item.feature));
-                $scope.map.setExtent(item.feature.geometry.getExtent(), true);
+
+                $scope.map.setExtent(item.feature.geometry.getExtent(), true)
+                    .then(function() {
+                        $scope.map.graphics.add(setSymbol(item.feature));
+                    });
             };
         }
 
